@@ -3,7 +3,7 @@ import json
 
 class Config(object):
     def __init__(self):
-        with open('config.json') as config_file:
+        with open('../config.json') as config_file:
             self.config = json.load(config_file)
 
     @property
