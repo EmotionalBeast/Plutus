@@ -8,11 +8,11 @@ class Bark:
         self.key = key
         self.icon = icon
 
-    def send_message(self, title, content):
+    def send(self, title, message):
         url = urljoin(self.host, 'push')
         data = {
             'title': title,
-            'body': content,
+            'body': message,
             'icon': self.icon,
             'device_key': self.key
         }
