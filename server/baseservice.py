@@ -1,11 +1,9 @@
 from rpyc import Service
 
-from client.util import Config
 import qstock as qs
 
 
 class BaseService(Service):
-    config = Config()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
