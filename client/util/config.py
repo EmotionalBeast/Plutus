@@ -10,10 +10,6 @@ class Config(object):
             self.config = json.load(config_file)
 
     @property
-    def tushare_token(self):
-        return self.config['Tushare']['token']
-
-    @property
     def bark_host(self):
         return self.config['Bark']['host']
 

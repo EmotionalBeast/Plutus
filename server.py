@@ -13,4 +13,3 @@ if __name__ == '__main__':
     logger.info('Starting server')
     s = ThreadedServer(service=SellingPointService, port=9981, auto_register=False)
     s.start()
-    logger.info('Server started')
