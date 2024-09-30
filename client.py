@@ -8,7 +8,7 @@ logging.config.fileConfig(LOGGING_FILE)
 logger = logging.getLogger(__name__)
 
 if __name__ == '__main__':
-    conn = rpyc.connect('localhost', 9981)
+    conn = rpyc.connect('172.16.0.103', 9981)
     result = conn.root.my_selling_point('600183')
     logger.info(result)
 
