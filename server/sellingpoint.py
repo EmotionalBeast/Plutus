@@ -5,7 +5,7 @@ import pandas as pd
 
 class SellingPointService(BaseService):
 
-    def exposed_my_selling_point(self, stock_symbol):
+    def exposed_volume_selling_point(self, stock_symbol):
         limit = 60
         df = self.qs.get_data(stock_symbol, freq='d').tail(15)
         df_vol = pd.DataFrame(df['volume'], columns=['volume'])

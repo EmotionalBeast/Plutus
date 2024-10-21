@@ -4,7 +4,7 @@ import os
 CONFIG_FILE = os.path.join(os.path.split(os.path.dirname(__file__))[0], "config.json")
 
 
-class Config(object):
+class BarkConfig(object):
     def __init__(self):
         with open(CONFIG_FILE) as config_file:
             self.config = json.load(config_file)
