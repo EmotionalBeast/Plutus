@@ -5,7 +5,7 @@ FROM python:3.10.11
 WORKDIR /app
 
 # 将当前目录内容复制到容器中
-COPY . /app
+COPY .. /app
 
 # 安装项目依赖
 RUN pip install --no-cache-dir -r requirements.txt
