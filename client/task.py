@@ -19,7 +19,6 @@ def volume_monitor():
             for row in rows:
                 ticker_symbol = row[0]
                 ticker_name = row[1]
-                print(ticker_symbol + '\n')
                 res = rpc_conn.root.my_selling_point(ticker_symbol)
                 if res['sell']:
                     title = 'Stock Analysis'

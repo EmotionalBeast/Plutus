@@ -10,8 +10,10 @@ COPY .. /app
 # 安装项目依赖
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 暴露服务端口
-EXPOSE 9981
+# server
+#EXPOSE 9981
+#CMD ["python", "server.py"]
 
-# 定义启动命令
-CMD ["python", "server.py"]
+# client
+EXPOSE 5000
+CMD ["python", "client.py"]
